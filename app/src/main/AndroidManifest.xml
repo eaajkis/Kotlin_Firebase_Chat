@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/> 
+        <activity android:name=".LoginActivity"/> //ny activity her for hver side
     </application>
 
 </manifest>
