@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/brugernavn_edittext_reg"
+        android:layout_width="347dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/brugernavn"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/password_edittext_reg"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:autofillHints=""
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/brugernavn_edittext_reg"
+        app:layout_constraintStart_toStartOf="@+id/brugernavn_edittext_reg"
+        app:layout_constraintTop_toBottomOf="@+id/brugernavn_edittext_reg" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:text="registrer"
+        app:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_reg"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_reg"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_reg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registrer bruger"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/allerede_oprettet_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Jeg har allerede en bruger"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/reg_button"
+        app:layout_constraintStart_toStartOf="@+id/reg_button"
+        app:layout_constraintTop_toBottomOf="@+id/reg_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
